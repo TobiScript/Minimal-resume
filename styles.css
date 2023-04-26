@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #c6e3f2;
+}
+
+.container {
+  width: 90%;
+  background-color: whitesmoke;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.section {
+  padding: 40px 30px 30px;
+  color: white;
+  text-align: left;
+}
+
+.section > h5 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.26);
+  margin-bottom: 20px;
+}
+
+.section > p {
+  font-size: 16px;
+  padding-bottom: 20px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.section > ul {
+  padding-left: 0;
+}
+
+.section > ul > li {
+  font-weight: 200;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.section > ul > li::before {
+  content: "✔️";
+}
+.section > img {
+  width: 150px;
+  border-radius: 100%;
+}
+
+.section > h1 {
+  color: rgb (56, 56, 56);
+  margin: 15px;
+  font-weight: 500;
+}
+
+.section > h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+
+.section:nth-of-type(1) {
+  background-color: darkseagreen;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.section:nth-of-type(2) {
+  background-color: darkslategray;
+}
+.section:nth-of-type(3) {
+  background-color: darkturquoise;
+}
+.section:nth-of-type(4) {
+  background-color: cadetblue;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.all-social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.social {
+  padding: 10px 20px;
+  border: 3px solid gray;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 750px) {
+  .container {
+    max-width: 650px;
+    margin: 10% auto;
+  }
+  .section {
+    display: flex;
+  }
+
+  .section:first-of-type {
+    display: block;
+  }
+  .section > h5 {
+    border-bottom: none;
+    text-align: right;
+    padding-right: 40px;
+    width: 30%;
+    border-right: 1px solid rgb(255, 255, 255, 0.26);
+  }
+  .section > p,
+  .section > ul,
+  .section > div {
+    width: 70%;
+    padding-left: 40px;
+  }
+}
